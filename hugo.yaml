@@ -1,0 +1,150 @@
+baseURL: "https://rhodnet.cloud/"
+title: "rhodnet"
+theme: "hextra"
+
+enableRobotsTXT: true
+enableGitInfo: true
+#enableEmoji: false
+#hasCJKLanguage: true
+
+# services:
+#   googleAnalytics:
+#     ID: G-MEASUREMENT_ID # TODO
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+    title: rhodnet
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)']]
+        enable: true
+
+enableInlineShortcodes: true
+
+
+menu:
+  main:
+    # TODO
+    # - name: Blog
+    #   pageRef: /blog
+    #   weight: 1
+    # - name: About
+    #   pageRef: /about
+    #   weight: 2
+    - name: Search
+      weight: 3
+      params:
+        type: search
+
+  sidebar:
+    - identifier: more
+      name: More
+      params:
+        type: separator
+      weight: 1
+    - identifier: about
+      name: "About"
+      pageRef: "/about"
+      weight: 2
+    - identifier: hugoDocs
+      name: "Hugo Docs ↗"
+      url: "https://gohugo.io/documentation/"
+      weight: 3
+
+params:
+  description: Exploring homelab adventures, security engineering, kubernetes, astrophotography, and more.
+
+  navbar:
+      displayTitle: true
+      displayLogo: false
+      logo:
+        path: images/logo.svg
+        dark: images/logo-dark.svg
+        # width: 40
+        # height: 20
+        # link: /
+      width: wide
+
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: normal
+
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: true
+    width: normal
+
+  # Display the last modification date
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  # Search
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      # full | forward | reverse | strict
+      # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
+      tokenize: forward
+
+  editURL:
+    enable: false
+    base: "https://github.com/imfing/hextra/edit/main/exampleSite/content"
+
+  blog:
+      list:
+        displayTags: true
+        # date | lastmod | publishDate | title | weight
+        sortBy: date
+        sortOrder: desc # or "asc"
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover # TODO
+
+
+  comments:
+    enable: false # TODO
+    type: giscus
+
+    # https://giscus.app/
+    giscus:
+      repo: imfing/hextra
+      repoId: R_kgDOJ9fJag
+      category: General
+      categoryId: DIC_kwDOJ9fJas4CY7gW
+      # mapping: pathname
+      # strict: 0
+      # reactionsEnabled: 1
+      # emitMetadata: 0
+      # inputPosition: top
+      # lang: en
+      # theme: noborder_dark
