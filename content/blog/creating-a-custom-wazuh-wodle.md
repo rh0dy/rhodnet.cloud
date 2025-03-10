@@ -123,7 +123,7 @@ As `hello_world_wodle.py` generates a custom log, there likely won't be an [exis
 </group>
 ```
 
-This rule will trigger an alert when the script sends an event with the `wodle` field set to `hello-world`. The entire event will be parsed as JSON, and the `kernel_info` field will be extracted and included in the alert description.
+This rule will trigger an alert when the script sends an event with the `wodle` field set to `hello-world`. You can configure the rule to trigger on specific conditions or fields in the event data relevant to your data. The entire event will be parsed as JSON, and the `kernel_info` field will be extracted and included in the alert description.
 
 {{< callout type="warning" >}}
   Rule order matters in Wazuh. Placing custom rules after existing rules with similar triggers can cause custom rules to be ignored.
