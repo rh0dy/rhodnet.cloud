@@ -8,10 +8,10 @@ tags = ['security-engineering', 'security-monitoring', 'siem', 'wazuh']
 ## Extending Beyond the Defaults
 
 {{< callout type="info" >}}
-  This post focuses on [Wazuh](https://wazuh.com), a unified Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) platform that has become increasingly popuplar as a powerful open-source solution for security monitoring and threat detection.
+  This post focuses on [Wazuh](https://wazuh.com), a unified Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) platform that has become increasingly popular as a powerful open-source solution for security monitoring and threat detection.
 {{< /callout >}}
 
-Security monitoring tools come with out-of-the-box support for common log sources, but what about those critical events happening in your custom applications? While these platforms excel at tracking standard system logs, they can miss the unique data sources and formats that matter in your particular environment.
+Security monitoring tools come with out-of-the-box support for common log sources, but what about those critical events happening in your custom applications? While these tools excel at tracking standard system logs, they can miss the unique data sources and formats that matter in your particular environment.
 
 Wazuh addresses this challenge with [wodles](https://documentation.wazuh.com/current/user-manual/reference/ossec-conf/wodle-command.html), a flexible framework that can be used to extend Wazuh's reach.
 
@@ -80,7 +80,7 @@ def main():
         kernel_name = subprocess.check_output(["uname", "-s"], universal_newlines=True).strip()
         kernel_release = subprocess.check_output(["uname", "-r"], universal_newlines=True).strip()
 
-        # Concatenate kernal information
+        # Concatenate kernel information
         kernel_info = f"{kernel_name} {kernel_release}"
 
         # Create event data
@@ -167,7 +167,7 @@ sudo tail -f /var/ossec/logs/ossec.log
 sudo tail -f /var/ossec/logs/alerts/alerts.log
 ```
 
-The `ossec.log` will give you system-level information, inlcuding wodle execution:
+The `ossec.log` will give you system-level information, including wodle execution:
 
 ```bash
 2025/03/02 13:49:05 wazuh-modulesd:command: INFO: Starting command 'hello-world'.
