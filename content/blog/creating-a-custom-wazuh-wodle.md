@@ -76,7 +76,7 @@ def main():
     print("Starting Hello World wodle")
 
     try:
-        # Get kernel name (e.g., Linux, Darwin) and release/version (e.g., 5.15.0-91-generic)
+        # Get kernel name (e.g., Linux, Darwin) and release/version
         kernel_name = subprocess.check_output(["uname", "-s"], universal_newlines=True).strip()
         kernel_release = subprocess.check_output(["uname", "-r"], universal_newlines=True).strip()
 
