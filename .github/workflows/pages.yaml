@@ -58,7 +58,7 @@ jobs:
         run: |
           hugo \
             --gc --minify \
-            --baseURL "https://${{ github.repository_owner }}.github.io/"
+            --baseURL "https://blog.rhodnet.cloud/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
