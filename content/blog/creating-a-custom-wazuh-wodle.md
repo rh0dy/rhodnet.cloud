@@ -1,7 +1,7 @@
 +++
 date = '2025-03-02T17:10:46Z'
 draft = false
-title = 'Building Custom Wazuh Wodles: Extending Your Security Monitoring Capabilities'
+title = 'Building Custom Wazuh Wodles'
 tags = ['security-engineering', 'security-monitoring', 'siem', 'wazuh']
 +++
 
