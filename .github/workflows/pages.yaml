@@ -58,7 +58,7 @@ jobs:
         run: |
           hugo \
             --gc --minify \
-            --baseURL "https://${{ github.repository_owner }}.github.io/
+            --baseURL "https://${{ github.repository_owner }}.github.io/"
       - name: Debug root files
         run: |
           echo "Files in public root:"
