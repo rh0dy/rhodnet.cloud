@@ -2,7 +2,7 @@
 date = '2025-03-02T17:10:46Z'
 draft = false
 title = 'Building Custom Wazuh Wodles'
-tags = ['security-engineering', 'security-monitoring', 'siem', 'wazuh']
+tags = ['open-source', 'security-engineering', 'security-monitoring', 'siem', 'wazuh']
 +++
 
 ## Extending Beyond the Defaults
