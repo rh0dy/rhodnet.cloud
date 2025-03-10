@@ -160,7 +160,7 @@ sudo systemctl restart wazuh-manager # or /var/ossec/bin/wazuh-control restart
 
 ### Verification
 
-To verify that the custom wodle is working as expected, tail the Wazuh logs in `/var/ossec/logs/`:
+To verify that the custom wodle and rule are working as expected, tail the Wazuh logs in `/var/ossec/logs/`:
 
 ```bash
 sudo tail -f /var/ossec/logs/ossec.log
