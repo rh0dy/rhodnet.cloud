@@ -48,7 +48,7 @@ Let's explore how to use the `command` wodle with a simple toy example that runs
 
 ### Custom Script
 
-This is a Python implementation that demonstrates the pattern above. In this case, the script collects the kernel version information and sends it to Wazuh as a custom event:
+This Python implementation demonstrates the monitoring pattern. In this example, the script collects kernel version information and sends it to Wazuh as a custom event, but the same approach could be adapted to monitor any custom data source:
 
 ```python {filename="hello_world_wodle.py"}
 #!/usr/bin/env python3
