@@ -38,12 +38,10 @@ jobs:
         with:
           fetch-depth: 0  # fetch all history for .GitInfo and .Lastmod
           submodules: recursive
-      - name: Debug theme checkout
+      - name: Debug root files
         run: |
-          echo "Theme directory contents:"
-          ls -la themes/
-          echo "Hextra theme contents:"
-          ls -la themes/hextra/ || echo "Hextra theme directory not found"
+          echo "Files in public root:"
+          ls -la public/
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
