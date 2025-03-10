@@ -73,7 +73,7 @@ def send_event(event):
 
 # Main function
 def main():
-    print("Starting Kernel Version Monitor wodle")
+    print("Starting Hello World wodle")
 
     try:
         # Get kernel name (e.g., Linux, Darwin) and release/version (e.g., 5.15.0-91-generic)
