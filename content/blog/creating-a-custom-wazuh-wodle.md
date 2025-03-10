@@ -110,7 +110,7 @@ sudo chmod +x /var/ossec/wodles/hello_world_wodle.py
 
 ### Custom Rule
 
-As `hello_world_wodle.py` generates a custom log, there likely won't be an [existing rule](https://github.com/wazuh/wazuh/tree/main/ruleset/rules/) that matches it, so we need to create a custom rule. To do this, edit `/var/ossec/etc/rules/local_rules.xml` and add the following rule:
+As `hello_world_wodle.py` generates a custom log, there likely won't be an [existing rule](https://github.com/wazuh/wazuh/tree/main/ruleset/rules/) that matches it, so you need to create a custom rule. To do this, edit `/var/ossec/etc/rules/local_rules.xml` and add the following rule:
 
 ```xml {filename="local_rules.xml"}
 <!-- Add a local rule for the custom wodle -->
