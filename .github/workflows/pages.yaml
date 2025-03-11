@@ -54,11 +54,10 @@ jobs:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-        # Change --baseURL "${{ steps.pages.outputs.base_url }}/" when deploying to a custom domain
         run: |
           hugo \
             --gc --minify \
-            --baseURL "https://blog.rhodnet.cloud/"
+            --baseURL "https://rhodnet.cloud/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
