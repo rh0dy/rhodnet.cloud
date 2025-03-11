@@ -44,11 +44,11 @@ Now, the real magic lies in the `command` wodle as it can be used to run your ow
 
 ## Creating a Custom Wodle
 
-Let's explore how to use the `command` wodle with a simple toy example that runs a script at a given interval to generate alerts for our custom data source.
+Let's explore how to use the `command` wodle with a very simple toy example that runs a Python script at a given interval to generate alerts for our custom data source.
 
 ### Custom Script
 
-This Python implementation demonstrates the monitoring pattern. In this example, the script collects kernel version information and sends it to Wazuh as a custom event, but the same approach could be adapted to monitor any custom data source:
+The script collects kernel version information, which is our "data source" in this example, and sends it to Wazuh as a custom event - the same approach could be adapted to monitor any custom data source:
 
 ```python {filename="hello_world_wodle.py"}
 #!/usr/bin/env python3
