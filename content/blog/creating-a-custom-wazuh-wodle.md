@@ -219,8 +219,10 @@ And that's it! You've successfully created a custom wodle with an associated rul
 
 ## Conclusion
 
-The steps for creating custom wodles are straightforward: write a custom script to collect, format your data and send to Wazuh;; create a custom rule to trigger on the specific conditions you care about; and update your Wazuh configuration to run the Wodle at intervals.
+The steps for creating custom wodles are straightforward: write a custom script to collect, format your data and send to Wazuh; create a custom rule to trigger on the specific conditions you care about; and update your Wazuh configuration to run the Wodle at intervals.
 
 Wazuh's documentation makes the learning curve much gentler, with clear examples and thorough explanations of its internal workings.
 
 Custom wodles are a game-changer for security monitoring. By creating your own wodles, you can keep an eye on non-standard systems in ways that generic tools can't and catch security events faster by monitoring exactly what matters to you.
+
+At [Zappi](https://zappi.io), where I work, we've adopted Wazuh and have been leveraging its capabilities over the last few years. Our security team has found it to be an invaluable tool in our arsenal, helping to provide visibility across our infrastructure. The platform's flexibility and robust feature set have allowed us to continuously enhance our security posture as the company has grown, all without the prohibitive costs associated with many commercial solutions.
