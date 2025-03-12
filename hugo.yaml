@@ -8,7 +8,7 @@ enableGitInfo: true
 
 services:
   googleAnalytics:
-    ID: G-TR7BKE7DCR
+    ID: G-TR7BLE7DCR
 
 outputs:
   home: [HTML]
