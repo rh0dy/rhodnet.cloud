@@ -13,7 +13,9 @@
             {{- if site.Params.blog.list.displayTags -}}
               {{ with .Params.tags }}
                 <p class="hx-opacity-50 hx-text-sm hx-leading-7">
-                  {{- range . }}<a class="hx-inline-block hx-mr-2">#{{ . }}</a>{{ end -}}
+                  {{- range . }}
+                    <a href="/tags/{{ . | urlize }}" class="hx-text-[color:hsl(var(--primary-hue),100%,50%)] hx-decoration-from-font hx-inline-block hx-mr-2">#{{ . }}</a>
+                  {{ end -}}
                 </p>
               {{ end -}}
             {{- end -}}
