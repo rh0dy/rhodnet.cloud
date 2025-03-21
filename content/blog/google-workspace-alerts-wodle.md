@@ -1,6 +1,6 @@
 +++
 date = '2025-03-20T19:03:06Z'
-draft = true
+draft = false
 title = 'Google Workspace Alerts Wodle'
 tags = ['open-source', 'security-engineering', 'security-monitoring', 'siem', 'wazuh', 'google-workspace']
 +++
